@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+jar {
+    baseName = 'mergefiles'
+    version = '1.0'
+    manifest {
+        attributes(
+                'Main-Class': 'mergefiles.Application'
+        )
+    }
+}
